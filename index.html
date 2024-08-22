@@ -25,8 +25,10 @@
                     colors: {
                         clifford: '#da373d',
                         btn_bg: '#ABEF5F',
-                        btn_bg_half:'rgba(171, 239, 95, 0.5)',
+                        btn_bg_half: 'rgba(171, 239, 95, 0.5)',
                         white_bg: 'rgba(8, 20, 131, 0)',
+                        primary_color: '#494949',
+                        secondary_color: '#737373',
                     },
                     fontFamily: {
                         manrope: 'Manrope',
@@ -49,8 +51,8 @@
 <body class="font-manrope ">
     <header class="bg-background_1">
         <nav class="container mx-auto">
-
-            <div class="navbar pt-10 flex justify-between">
+            <!-- navbar -->
+            <div class="navbar pt-8 sm:pt-10 flex justify-between">
 
                 <!-- navbar start -->
                 <div class="flex justify-between">
@@ -64,7 +66,7 @@
                 </div>
 
                 <!-- navbar center -->
-                <div class=" hidden lg:flex">
+                <div class=" hidden lg:block">
                     <ul class="menu menu-horizontal px-1 text-base">
                         <li class="hover:font-extrabold"><a href="">Home</a></li>
                         <li class="hover:font-extrabold"><a href="">Services</a></li>
@@ -117,32 +119,97 @@
                 </div>
             </div>
 
-            <!-- header's 2nd part -->
-            <div class="text-center flex flex-col items-center pt-11">
+            <!-- banner -->
+            <div class="text-center flex flex-col items-center pt-8 sm:pt-11">
                 <!-- banner image -->
                 <div class="text-center">
                     <img class="inline" src="./assets/banner.png" alt="">
                 </div>
-                <h2 class="text-3xl sm:text-6xl pt-6 font-extrabold ">A barn house of this design has a striking appearance</h2>
-                <p class="text-sm sm:text-base pt-6 font-medium leading-7">The barn house captivates with its blend of rustic charm and
+                <h2 class="text-3xl sm:text-6xl pt-4 sm:pt-6 font-extrabold ">A barn house of this design has a striking
+                    appearance</h2>
+                <p class="text-sm sm:text-base pt-6 font-medium leading-7">The barn house captivates with its blend of
+                    rustic charm and
                     modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that
                     flood the space with natural light.
                 </p>
                 <!-- button -->
-                <div class="flex justify-center items-center  border-black gap-2 bg-btn_bg_half mt px-5 py-4 w-[206px] rounded-[32px]">
+                <div
+                    class="flex justify-center items-center  border-black gap-2 bg-btn_bg_half mt px-5 py-4 mt-5 w-11/12 sm:w-[206px] rounded-[32px]">
                     <p class="text-xl font-extrabold text-[#1C1C1C]">View Details</p>
                     <div class="bg-btn_bg rounded-full w-8 h-8 flex items-center justify-center">
                         <i class="fa-solid fa-arrow-right -rotate-45 "></i>
                     </div>
                 </div>
-
-
-
             </div>
         </nav>
-
-
     </header>
+
+
+    <!-- our latest portfolio -->
+    <section class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-6">
+
+            <!-- div 1 -->
+            <div class="sm:flex sm:p-6 border rounded-2xl col-span-8 hidden ">
+                <div class="mr-6  w-1/2">
+                    <img src="./assets/img1.png" class="w-full h-full" alt="">
+                </div>
+                <div>
+                    <h2 class="font-extrabold text-primary_color text-2xl">Commercial</h2>
+                    <p class="text-secondary_color text-base font-medium mt-4 mb-5">The barn house captivates with its
+                        blend of rustic charm and modern. The barn house captivates
+                        with its blend of rustic charm and modern .
+                    </p>
+                    <button class="flex text-xl font-extrabold">
+                        <p>View Details</p>
+                        <div class="bg-btn_bg rounded-full w-8 h-8 ml-3 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- div 2 -->
+            <div class="sm:p-6 border rounded-2xl col-span-4 ">
+                <img src="./assets/img2.png" class="w-full h-full" alt="">
+            </div>
+
+            <!-- div 3 -->
+            <div class="p-6 border rounded-2xl lg:col-span-3">
+                <img src="./assets/img3.png" class="w-full h-full" alt="">
+            </div>
+
+            <!-- div 4 -->
+            <div class="grid grid-cols-6 p-6 border rounded-2xl lg:col-span-6">
+                <div class="col-span-3 pr-6 rounded-2xl">
+                    <img src="./assets/img4.png" class="w-full h-full" alt="">
+                </div>
+                <div class="col-span-3">
+                    <h2 class="font-extrabold text-primary_color text-2xl">Commercial</h2>
+                    <p class="text-secondary_color text-base font-medium mt-4 mb-5">The barn house captivates with its
+                        blend of rustic charm and modern. The barn house captivates
+                        with its blend of rustic charm and modern .
+                    </p>
+                    <button class="flex text-xl font-extrabold">
+                        <p>View Details</p>
+                        <div class="bg-btn_bg rounded-full w-8 h-8 ml-3 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- div 5 -->
+            <div class="p-6 border rounded-2xl lg:col-span-3">
+                <img src="./assets/img5.png" class="w-full h-full"  alt="">
+            </div>
+        </div>
+
+       
+
+        <div class="mt-10">man</div>
+    </section>
+
 </body>
 
 </html>
