@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -24,20 +24,125 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        btn_bg: '#ABEF5F',
+                        btn_bg_half:'rgba(171, 239, 95, 0.5)',
+                        white_bg: 'rgba(8, 20, 131, 0)',
                     },
                     fontFamily: {
-                        poppin:'Poppins',
+                        manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        section_bg: "url('./assets/bg.jpg')",
+                        background_1: 'linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
                     }
                 }
             }
         }
     </script>
+    <style>
+        @media screen and (max-width:640px) {}
+    </style>
 
     <title>Document</title>
 </head>
 
-<body>
+<body class="font-manrope ">
+    <header class="bg-background_1">
+        <nav class="container mx-auto">
 
+            <div class="navbar pt-10 flex justify-between">
+
+                <!-- navbar start -->
+                <div class="flex justify-between">
+                    <div class="flex items-center">
+                        <!-- arrow-icon -->
+                        <div class="bg-btn_bg rounded-full w-8 h-8 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                        </div>
+                        <a class="pl-2 text-3xl font-extrabold">Rinterio</a>
+                    </div>
+                </div>
+
+                <!-- navbar center -->
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li class="hover:font-extrabold"><a href="">Home</a></li>
+                        <li class="hover:font-extrabold"><a href="">Services</a></li>
+                        <li class="hover:font-extrabold"><a href="">Portfolio</a></li>
+                        <li class="hover:font-extrabold"><a href="">Blogs</a></li>
+                        <li class="hover:font-extrabold"><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- navbar end -->
+                <div class=" hidden lg:flex">
+                    <!-- search icon -->
+                    <div class=" bg-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <!-- card-shopping icon -->
+                    <div class=" bg-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 bg-btn_bg px-5 py-4 rounded-[32px]">
+                        <p class="text-xl font-extrabold text-[#1C1C1C]">Book Consult</p>
+                        <div class=" bg-black rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hamburger with dropdown -->
+                <div class="dropdown lg:hidden ">
+                    <div class="dropdown dropdown-bottom dropdown-end  ">
+                        <div tabindex="0" role="button"
+                            class=" bg-white w-12 h-12 flex justify-center items-center rounded-full">
+                            <span class="w-6 h-6">
+                                <span class="mb-1 border border-black flex"></span>
+                                <span class="mb-1 border border-black flex"></span>
+                                <span class="mb-1 border border-black flex"></span>
+                                <span class="border border-black flex"></span>
+                            </span>
+                        </div>
+                        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-40 p-2 shadow">
+                            <li>
+                                <a href="">Home</a>
+                                <a href="">Services</a>
+                                <a href="">Portfolio</a>
+                                <a href="">Blogs</a>
+                                <a href="">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header's 2nd part -->
+            <div class="text-center flex flex-col items-center pt-11">
+                <!-- banner image -->
+                <div class="text-center">
+                    <img class="inline" src="./assets/banner.png" alt="">
+                </div>
+                <h2 class="text-3xl sm:text-6xl pt-6 font-extrabold ">A barn house of this design has a striking appearance</h2>
+                <p class="text-sm sm:text-base pt-6 font-medium leading-7">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that
+                    flood the space with natural light.
+                </p>
+                <!-- button -->
+                <div class="flex justify-center items-center  border-black gap-2 bg-btn_bg_half mt px-5 py-4 w-[206px] rounded-[32px]">
+                    <p class="text-xl font-extrabold text-[#1C1C1C]">View Details</p>
+                    <div class="bg-btn_bg rounded-full w-8 h-8 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+    </header>
 </body>
 
 </html>
